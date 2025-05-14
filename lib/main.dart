@@ -1,3 +1,4 @@
+import 'package:first_app/menu_item_details.dart';
 import 'package:first_app/profile_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProfileScreen(),
+      home: MenuItemDetails(),
     );
   }
 }
