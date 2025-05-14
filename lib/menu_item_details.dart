@@ -113,14 +113,30 @@ class _MenuItemDetailsState extends State<MenuItemDetails> {
             ),
             const SizedBox(height: 16),
 
-            ElevatedButton(
+Row(
+  children: [
+    Expanded(flex: 6,child: 
+    Text(
+              '160 EGP',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+            ),
+    ),
+    
+    Expanded(flex:4,child: 
+    ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.orange,
+                backgroundColor: Color.fromARGB(255, 245, 195, 119),
                 minimumSize: Size(double.infinity, 50),
               ),
-              child: Text('ADD TO CART'),
+              child: Text('ADD TO CART',style: TextStyle(color: Colors.white),),
             ),
+    )
+
+             
+  ],
+)
+           ,
 
             const SizedBox(height: 16),
             Container(
